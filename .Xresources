@@ -1,0 +1,159 @@
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.autohint: false
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+Xcursor.size: 16
+! -----------------------------------------------------
+
+! Basic settings
+XTerm*termName: xterm-256color
+XTerm*locale: true
+XTerm*utf8: 2
+XTerm*dynamicColors: false
+
+! UI components
+XTerm*toolBar: false
+XTerm*scrollBar: false
+XTerm*internalBorder: 8
+XTerm*externalBorder: 0
+
+XTerm*cursorBlink: false
+
+! Font settings
+XTerm*faceName: Hack Nerd Font:size=4:antialias=true
+XTerm*renderFont: true
+XTerm*boldColors: false
+XTerm*faceSize1: 9.0
+XTerm*faceSize2: 10
+XTerm*faceSize3: 11
+XTerm*faceSize4: 12
+XTerm*faceSize5: 13
+XTerm*faceSize6: 25.5
+XTerm*forceBoxChars: true
+
+! Scroll and output
+XTerm*jumpScroll: true
+XTerm*multiScroll: true
+XTerm*saveLines: 9999
+XTerm*scrollKey: true
+XTerm*scrollTtyKeypress: true
+XTerm*scrollTtyOutput: false
+
+! Backspace behaviour
+XTerm*backarrowKey: false
+XTerm*metaSendsEscape: true
+XTerm*ttyModes: erase ^?
+
+! Key bindings.  Use C-S-{c,v} to copy/paste as in GNOME terminal.  The
+! keys "Prior" and "Next" represent PgUp and PgDown respectively.
+XTerm*selectToClipboard: true
+XTerm*translations: #override \n\
+	Ctrl Shift <KeyPress>C: select-end(SELECT, CLIPBOARD) \n\
+	Ctrl Shift <KeyPress>V: insert-selection(SELECT, CLIPBOARD) \n\
+	Ctrl <KeyPress>-: smaller-vt-font() \n\
+	Ctrl <KeyPress>=: larger-vt-font() \n\
+	Ctrl <KeyPress>0: set-vt-font(d) \n\
+    <Key>F12: maximize() \n\
+    Ctrl <Key>F12: restore()
+
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+XTerm*on2Clicks: regex [^/@ \n]+
+XTerm*on3Clicks:  regex [^ \n]+
+XTerm*on4Clicks:  regex [^#$]+
+XTerm*fullscreen: never
+
+
+! -----------------------------------------------------
+st.termname:     st-256color
+st.shell:        /bin/bash
+
+st.font:  UDEV Gothic:size=9:antialias=true:autohint=false;
+st.sparefonts: Iosevka Term:size=9:antialias=true:autohint=false
+
+st.borderperc:   22
+st.borderpx:   22
+st.cursorshape:  2
+st.cursorthickness:  2
+st.cursorblinkstyle: 0
+
+st.disablebold:    1
+st.disableitalic:    1
+st.disableroman:    1
+
+st.boxdraw: 1
+st.boxdraw_bold: 1
+st.boxdraw_braille: 1
+
+st.allowwindowops: 1
+st.taskbaricon:   1
+st.minlatency:   8
+st.maxlatency:   33
+st.su_timeout:   200
+st.chscale:      1.0
+st.cwscale:      1.0
+st.blinktimeout: 800
+st.prompt_char: >> $
+st.rows:  25
+st.cols:  80
+! Dimensions if PixelGeometry is selected
+st.width: 800
+st.height: 600
+st.bellvolume:  0
+! history size
+st.histsize:  1200
+! instruct the window manager to skip taskbar fot the current window
+! 0 disables the feature
+st.skiptaskbar:   1
+! Skip the DM pager
+st.skippager:   1
+! opacity==255 means what terminal will be not transparent, 0 - fully transparent
+st.opacity:      255
+st.unfocused_opacity:   128
+
+
+st.foreground:  #f7d66a
+st.background:  #0c0c0c
+st.color0:      #351b0e
+st.color8:      #874228
+st.color1:      #9b291c
+st.color9:      #ff4331
+st.color2:      #636232
+st.color10:     #b4b264
+st.color3:      #c36e28
+st.color11:     #ff9566
+st.color4:      #515c5d
+st.color12:     #9eb2b4
+st.color5:      #9b1d29
+st.color13:     #ff5b6a
+st.color6:      #588056
+st.color14:     #8acd8f
+st.color7:      #f7d75c
+st.color15:     #ffe598
+
+*foreground:  #f7d66a
+*background:  #0c0c0c
+*color0:      #351b0e
+*color8:      #874228
+*color1:      #9b291c
+*color9:      #ff4331
+*color2:      #636232
+*color10:     #b4b264
+*color3:      #c36e28
+*color11:     #ff9566
+*color4:      #515c5d
+*color12:     #9eb2b4
+*color5:      #9b1d29
+*color13:     #ff5b6a
+*color6:      #588056
+*color14:     #8acd8f
+*color7:      #f7d75c
+*color15:     #ffe598
+
+stz.primary:     #8acd8f
+stz.secondary:      #f7d75c
+stz.hl:     #ffe598
